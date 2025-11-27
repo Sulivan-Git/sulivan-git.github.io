@@ -35,6 +35,12 @@
 
 ## 📚 Projetos em Destaque
 
+### 🔸 **Peneirada FC — Rede Social para atletas**
+✔ Interface moderna  
+✔ Layout responsivo  
+✔ Prototipação realista  
+✔ Voltado para clubes, peneiras e jovens atletas
+
 ### 🔸 **G-Stock — Sistema de Gerenciamento de Estoque**
 ✔ Desenvolvido em Java com Banco de Dados  
 ✔ Interface intuitiva  
@@ -46,12 +52,6 @@
 ✔ Estruturas heterogêneas  
 ✔ Ponteiros  
 ✔ Cadastro e consulta de livros, usuários e empréstimos  
-
-### 🔸 **Peneirada FC — Rede Social para atletas**
-✔ Interface moderna  
-✔ Layout responsivo  
-✔ Prototipação realista  
-✔ Voltado para clubes, peneiras e jovens atletas  
 
 ## 🌱 O que estou estudando agora:
 
