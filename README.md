@@ -13,7 +13,7 @@
   - Sistema de Gerenciamento de Estoque **G-Stock** (Projeto Integrador)  
   - Sistema de Biblioteca em **C/C++**  
   - Rede social e interfaces para portfólio (**Peneirada FC**)  
-- 🌎 Portfólio: [suliv.github.io](https://suliv.github.io)  
+- 🌎 Portfólio: [suliv.github.io](https://sulivan-git.github.io/suliv.github.io/)  
 - 🔗 LinkedIn: [sullywan](https://www.linkedin.com/in/sullywan)  
 
 ---
