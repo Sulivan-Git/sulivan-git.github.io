@@ -1,39 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfólio - Sulivan</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Portfólio · Sulivan de Oliveira Silva</title>
+  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva" />
+  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC em produção, G-Stock (Java) e Sistema de Biblioteca (C/C++)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://suliv.github.io" />
+  <meta property="og:image" content="https://suliv.github.io/og-image.png" />
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="favicon.png" />
+
+  <!-- Fonte (opcional, local ou CDN) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>👋 Olá! Eu sou Sulivan</h1>
-    <p>Estudante de ADS | Desenvolvedor em formação | Apaixonado por tecnologia 🚀</p>
+  <!-- Link de acesso rápido para pular para o conteúdo principal -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header__inner">
+      <div>
+        <h1>👋 Olá! Eu sou <span class="highlight">Sulivan</span></h1>
+        <p class="subtitle">Estudante de ADS (5º semestre) · Desenvolvedor em formação · Apaixonado por tecnologia 🚀</p>
+      </div>
+
+      <nav class="social" aria-label="Links sociais">
+        <a class="btn btn--ghost" href="mailto:sulivan.silva07@gmail.com" target="_blank" rel="noopener">Email</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn--ghost" href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://suliv.github.io" target="_blank" rel="noopener">Portfólio</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Sobre mim</h2>
-    <p>Sou estudante de Análise e Desenvolvimento de Sistemas (5º semestre), focado em desenvolvimento web, Java e C++.</p>
-  </section>
+  <main id="conteudo">
+    <!-- SOBRE -->
+    <section class="section" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <h2 id="sobre-titulo">Sobre mim</h2>
+        <p>
+          Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (5º semestre), com foco em
+          <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>. Gosto de
+          transformar ideias em produtos funcionais e úteis para pessoas. Atualmente, construindo projetos práticos
+          e aprimorando estrutura de dados, boas práticas e padrões de projeto.
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Projetos</h2>
-    <ul>
-      <li>Peneirada FC — Rede social para atletas</li>
-      <li>G-Stock — Sistema de gerenciamento de estoque em Java</li>
-      <li>Sistema de Biblioteca — Projeto em C/C++</li>
-    </ul>
-  </section>
+    <!-- HABILIDADES -->
+    <section class="section" aria-labelledby="skills-titulo">
+      <div class="container">
+        <h2 id="skills-titulo">Habilidades & Tecnologias</h2>
+        <ul class="tags" role="list">
+          <li class="tag">HTML</li>
+          <li class="tag">CSS</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">Git</li>
+          <li class="tag">GitHub</li>
+          <li class="tag">C</li>
+          <li class="tag">C++</li>
+          <li class="tag">Java</li>
+          <li class="tag">SQL</li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>Email: <a href="mailto:sulivan.silva07@gmail.com">sulivan.silva07@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sullywan" target="_blank">linkedin.com/in/sullywan</a></p>
-    <p>GitHub: <a href="https://github.com/Sulivan-Git" target="_blank">github.com/Sulivan-Git</a></p>
-  </section>
+    <!-- PROJETOS -->
+    <section class="section" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <h2 id="projetos-titulo">Projetos</h2>
 
-  <footer>
-    <p>© 2025 - Portfólio de Sulivan</p>
+        <div class="grid">
+          <!-- Peneirada FC -->
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Peneirada FC — Rede social para atletas</h3>
+              <span class="badge badge--success" aria-label="Em produção">Em produção</span>
+            </header>
+            <p class="card__desc">
+              Plataforma web que conecta atletas, clubes e peneiras. Interface moderna e responsiva,
+              com foco em experiência do usuário.
+            </p>
+            <ul class="card__bullets">
+              <li>Deploy ativo: front-end/publicação</li>
+              <li>UX/UI responsivo</li>
+              <li>Produto real em uso</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn" href="https://peneirada.acilab.com.br/" target="_blank" rel="noopener">Visitar</a>
+              <!-- Se tiver repositório público, adicione abaixo -->
+              <!-- <a class="btn btn--ghost" href="LINK_DO_REPO" target="_blank" rel="noopener">Código</a> -->
+            </div>
+          </article>
+
+          <!-- G-Stock -->
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">G-Stock — Sistema de gerenciamento de estoque</h3>
+              <span class="badge">Java + Banco de Dados</span>
+            </header>
+            <p class="card__desc">
+              Sistema em Java com cadastro de produtos, entrada/saída, clientes, fornecedores e vendas.
+              Foco em CRUD, persistência e boas práticas.
+            </p>
+            <ul class="card__bullets">
+              <li>Java + JDBC</li>
+              <li>Camadas e organização</li>
+              <li>Interface intuitiva</li>
+            </ul>
+            <div class="card__actions">
+              <!-- Adicione links quando disponíveis -->
+              <!-- <a class="btn" href="#" target="_blank" rel="noopener">Demo</a> -->
+              <!-- <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Código</a> -->
+            </div>
+          </article>
+
+          <!-- Biblioteca C/C++ -->
+          <article class="card">
+            <header class="card__header">
+              <h3 class="card__title">Sistema de Biblioteca (C/C++)</h3>
+              <span class="badge">C/C++</span>
+            </header>
+            <p class="card__desc">
+              Aplicação em C/C++ utilizando arrays, estruturas heterogêneas e ponteiros para cadastro
+              e consulta de livros, usuários e empréstimos.
+            </p>
+            <ul class="card__bullets">
+              <li>Estruturas & ponteiros</li>
+              <li>Cadastro e consultas</li>
+              <li>Foco em fundamentos</li>
+            </ul>
+            <div class="card__actions">
+              <!-- <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Código</a> -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" aria-labelledby="contato-titulo">
+      <div class="container">
+        <h2 id="contato-titulo">Contato</h2>
+        <ul class="contact" role="list">
+          <li><strong>Email:</strong> <a href="mailto:sulivan.silva07@gmail.com">sulivan.silva07@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">linkedin.com/in/sullywan</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">github.com/Sulivan-Git</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="ano"></span> · Portfólio de <strong>Sulivan</strong></p>
+    </div>
   </footer>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+``
