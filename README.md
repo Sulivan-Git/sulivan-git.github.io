@@ -1,6 +1,6 @@
 # 👋 Olá! Eu sou o Sulivan de Oliveira Silva
 
-🎓 Estudante de Análise e Desenvolvimento de Sistemas (4º semestre)  
+🎓 Estudante de Análise e Desenvolvimento de Sistemas (5º semestre)  
 💻 Desenvolvedor em formação e apaixonado por tecnologia, projetos práticos e soluções que ajudam pessoas  
 🚀 Buscando oportunidades para evoluir e aplicar meus conhecimentos  
 
