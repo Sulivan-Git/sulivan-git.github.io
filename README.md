@@ -1,20 +1,22 @@
+
+
 # 👋 Olá! Eu sou o Sulivan de Oliveira Silva
 
 🎓 Estudante de Análise e Desenvolvimento de Sistemas (5º semestre)  
-💻 Desenvolvedor em formação e apaixonado por tecnologia, projetos práticos e soluções que ajudam pessoas  
-🚀 Buscando oportunidades para evoluir e aplicar meus conhecimentos  
+💻 Desenvolvedor em formação, apaixonado por tecnologia, projetos práticos e soluções que ajudam pessoas  
+🚀 Buscando oportunidades para evoluir e aplicar meus conhecimentos no mercado  
 
 ---
 
 ## 🚀 Sobre mim
-- 🎓 Estudante de ADS — foco em desenvolvimento e estrutura de dados  
-- 💡 Objetivo: evoluir como desenvolvedor e entrar na área de tecnologia  
+- 🎓 Foco em **desenvolvimento**, **estrutura de dados** e práticas modernas de programação  
+- 💡 Objetivo: crescer como desenvolvedor e ingressar na área de tecnologia  
 - 🛠️ Projetos atuais:
-  - Sistema de Gerenciamento de Estoque **G-Stock** (Projeto Integrador)  
-  - Sistema de Biblioteca em **C/C++**  
-  - Rede social e interfaces para portfólio (**Peneirada FC**)  
-- 🌎 Portfólio: [suliv.github.io](https://sulivan-git.github.io/suliv.github.io/)  
-- 🔗 LinkedIn: [sullywan](https://www.linkedin.com/in/sullywan)  
+  - **G-Stock** — Sistema de Gerenciamento de Estoque *(Projeto Integrador)*  
+  - **Sistema de Biblioteca** em **C/C++**  
+  - **Peneirada FC** — Rede social e plataforma web em produção  
+- 🌎 Portfólio: https://suliv.github.io  
+- 🔗 LinkedIn: https://www.linkedin.com/in/sullywan  
 
 ---
 
@@ -41,19 +43,26 @@
 
 ## 📚 Projetos em Destaque
 
-### 🔸 Peneirada FC — Rede Social para atletas
-✔ Interface moderna  
-✔ Layout responsivo  
-✔ Prototipação realista  
-✔ Voltado para clubes, peneiras e jovens atletas  
+---
 
-### 🔸 G-Stock — Sistema de Gerenciamento de Estoque
-✔ Desenvolvido em Java com Banco de Dados  
+### 🔸 **Peneirada FC — Rede Social para Atletas**  
+➡️ **Projeto em produção:** https://peneirada.acilab.com.br/  
+✔ Plataforma real funcionando, voltada para atletas, clubes e peneiras  
+✔ Interface moderna e totalmente responsiva  
+✔ Experiência prática em UX, UI e desenvolvimento web  
+✔ Conecta jovens atletas a oportunidades profissionais  
+
+---
+
+### 🔸 **G-Stock — Sistema de Gerenciamento de Estoque**
+✔ Desenvolvido em **Java + Banco de Dados**  
 ✔ Interface intuitiva  
 ✔ Registro de entrada e saída  
 ✔ Controle de clientes, fornecedores e vendas  
 
-### 🔸 Sistema de Biblioteca (C/C++)
+---
+
+### 🔸 **Sistema de Biblioteca (C/C++)**
 ✔ Uso de arrays  
 ✔ Estruturas heterogêneas  
 ✔ Ponteiros  
@@ -62,15 +71,15 @@
 ---
 
 ## 🌱 O que estou estudando agora
-- Estruturas de Dados (com o professor Nator Junior)  
+- Estruturas de Dados *(com o professor Nator Junior)*  
 - Java + JDBC  
-- GitHub Student Developer Pack para montar portfólio profissional  
-- Diagramação (UML), casos de uso, arquitetura, sequência e classes  
+- GitHub Student Developer Pack (para montar portfólio profissional)  
+- UML: casos de uso, sequência, classes e arquitetura de software  
 
 ---
 
 ## 🎯 Objetivo
-Construir uma carreira sólida em tecnologia, começando como estagiário na área de desenvolvimento, expandindo minhas habilidades e criando projetos reais que tragam impacto.
+Construir uma carreira sólida em tecnologia, começando como **estagiário na área de desenvolvimento**, expandindo habilidades e criando projetos reais que tragam impacto.
 
 ---
 
@@ -84,9 +93,9 @@ Construir uma carreira sólida em tecnologia, começando como estagiário na ár
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sullywan)  
 [![Portfólio](https://img.shields.io/badge/-Portfólio-000000?style=flat&logo=github&logoColor=white)](https://suliv.github.io)  
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sulivan.silva07@gmail.com)  
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:sulivan.silva07@gmail.com)
 
 ---
 
-✨ Obrigado por visitar meu perfil!  
+✨ **Obrigado por visitar meu perfil!**  
 Sempre aberto para aprender, trocar conhecimento e participar de novos projetos 🚀
