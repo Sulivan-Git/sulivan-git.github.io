@@ -71,10 +71,27 @@
       </div>
 
       <!-- Foto suspensa (flutuante) -->  
+
 <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
-  img/sulivan-768.jpg
+  <picture>
+    <!-- AVIF -->
+    
+      img/sulivan-512.avif 512w,
+      img/sulivan-768.avif 768w,
+      img/sulivan-1024.avif 1024w
+     (max-width: 720px) 160px, 260px">
+    <!-- WebP -->
+    
+      img/sulivan-512.webp 512w,
+      img/sulivan-768.webp 768w,
+      img/sulivan-1024.webp 1024w
+     (max-width: 720px) 160px, 260px">
+    <!-- Fallback JPG -->
+    img/sulivan-768.jpg
+  </picture>
   <span class="portrait-glow" aria-hidden="true"></span>
 </figure>
+
 
     </div>
   </header>
