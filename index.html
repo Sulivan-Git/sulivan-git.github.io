@@ -6,78 +6,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Portfólio · Sulivan de Oliveira Silva</title>
-  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca." />
+  <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://suliv.github.io">
 
   <!-- Open Graph / Social -->
-  <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva" />
-  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC em produção, G-Stock (Java) e Sistema de Biblioteca (C/C++)." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://suliv.github.io" />
-  <meta property="og:image" content="https://suliv.github.io/og-image.png" />
+  <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva">
+  <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC (produção), G-Stock (Java) e Sistema de Biblioteca (C/C++).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://suliv.github.io">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f172a">
 
-  <!-- Favicon (opcional) -->
-  <link rel="icon" href="favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
 
-  <!-- Fonte (opcional, local ou CDN) -->
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Link de acesso rápido para pular para o conteúdo principal -->
+  <!-- Acesso rápido -->
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+  <!-- HEADER -->
   <header class="site-header" role="banner">
     <div class="container header__inner">
-      <div>
+      <!-- Texto -->
+      <div class="header__info">
         <h1>👋 Olá! Eu sou <span class="highlight">Sulivan</span></h1>
         <p class="subtitle">Estudante de ADS (5º semestre) · Desenvolvedor em formação · Apaixonado por tecnologia 🚀</p>
+
+        <nav class="social" aria-label="Links sociais">
+          <a class="btn btn--ghost" href="mailto:sulivan.silva07@gmail.com" target="_blank" rel="noopener">Email</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn--ghost" href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="#projetos">Ver projetos</a>
+        </nav>
       </div>
 
-      <nav class="social" aria-label="Links sociais">
-        <a class="btn btn--ghost" href="mailto:sulivan.silva07@gmail.com" target="_blank" rel="noopener">Email</a>
-        <a class="btn btn--ghost" href="https://www.linkedin.com/in/sullywan" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn btn--ghost" href="https://github.com/Sulivan-Git" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="suliv.github.io" target="_blank" rel="noopener">Portfólio</a>
-      </nav>
+      <!-- Foto suspensa -->
+      <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
+        <picture>
+          <!-- AVIF -->
+          <source
+            type="image/avif"
+            srcset="
+              img/sulivan-512.avif 512w,
+              img/sulivan-768.avif 768w,
+              img/sulivan-1024.avif 1024w
+            "
+            sizes="(max-width: 720px) 160px, 260px">
+          <!-- WebP -->
+          <source
+            type="image/webp"
+            srcset="
+              img/sulivan-512.webp 512w,
+              img/sulivan-768.webp 768w,
+              img/sulivan-1024.webp 1024w
+            "
+            sizes="(max-width: 720px) 160px, 260px">
+          <!-- Fallback JPG -->
+          <img
+            src="img/sulivan-768.jpg"
+            srcset="
+              img/sulivan-512.jpg 512w,
+              img/sulivan-768.jpg 768w,
+              img/sulivan-1024.jpg 1024w
+            "
+            sizes="(max-width: 720px) 160px, 260px"
+            width="260" height="260"
+            alt="Foto de Sulivan"
+            class="portrait-img"
+            decoding="async"
+            fetchpriority="high"
+            loading="eager">
+        </picture>
+        <span class="portrait-glow" aria-hidden="true"></span>
+      </figure>
     </div>
   </header>
 
   <main id="conteudo">
     <!-- SOBRE -->
-    <section class="section" aria-labelledby="sobre-titulo">
+    <section class="section" id="sobre" aria-labelledby="sobre-titulo">
       <div class="container">
         <h2 id="sobre-titulo">Sobre mim</h2>
         <p>
           Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> (5º semestre), com foco em
-          <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>. Gosto de
-          transformar ideias em produtos funcionais e úteis para pessoas. Atualmente, construindo projetos práticos
-          e aprimorando estrutura de dados, boas práticas e padrões de projeto.
+          <strong>Desenvolvimento Web</strong>, <strong>Java</strong> e <strong>C++</strong>. Gosto de transformar ideias
+          em produtos funcionais. Atualmente, construo projetos práticos e evoluo em estruturas de dados, boas práticas e padrões.
         </p>
       </div>
     </section>
 
     <!-- HABILIDADES -->
-    <section class="section" aria-labelledby="skills-titulo">
+    <section class="section" id="habilidades" aria-labelledby="skills-titulo">
       <div class="container">
-        <h2 id="skills-titulo">Habilidades & Tecnologias</h2>
+        <h2 id="skills-titulo">Habilidades &amp; Tecnologias</h2>
+
         <ul class="tags" role="list">
-          <li class="tag">HTML</li>
-          <li class="tag">CSS</li>
-          <li class="tag">JavaScript</li>
-          <li class="tag">Git</li>
-          <li class="tag">GitHub</li>
-          <li class="tag">C</li>
-          <li class="tag">C++</li>
-          <li class="tag">Java</li>
-          <li class="tag">SQL</li>
+          <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+          <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">C</li>
+          <li class="tag">C++</li><li class="tag">Java</li><li class="tag">SQL</li>
         </ul>
+
+        <!-- Medidores -->
+        <div class="skills">
+          <div class="skill"><span>Java</span><div class="bar"><span style="width: 80%"></span></div></div>
+          <div class="skill"><span>C / C++</span><div class="bar"><span style="width: 80%"></span></div></div>
+          <div class="skill"><span>Web (HTML/CSS/JS)</span><div class="bar"><span style="width: 65%"></span></div></div>
+          <div class="skill"><span>Git / GitHub</span><div class="bar"><span style="width: 60%"></span></div></div>
+        </div>
       </div>
     </section>
 
     <!-- PROJETOS -->
-    <section class="section" aria-labelledby="projetos-titulo">
+    <section class="section" id="projetos" aria-labelledby="projetos-titulo">
       <div class="container">
         <h2 id="projetos-titulo">Projetos</h2>
 
@@ -93,14 +146,13 @@
               com foco em experiência do usuário.
             </p>
             <ul class="card__bullets">
-              <li>Deploy ativo: front-end/publicação</li>
-              <li>UX/UI responsivo</li>
-              <li>Produto real em uso</li>
+              <li><strong>Papel:</strong> desenvolvimento front e integração</li>
+              <li><strong>Stack:</strong> HTML, CSS, JavaScript, GitHub</li>
+              <li><strong>Impacto:</strong> produto real em uso</li>
+              <li><strong>Aprendizado:</strong> UI, componentes, versionamento</li>
             </ul>
             <div class="card__actions">
               <a class="btn" href="https://peneirada.acilab.com.br/" target="_blank" rel="noopener">Visitar</a>
-              <!-- Se tiver repositório público, adicione abaixo -->
-              <!-- <a class="btn btn--ghost" href="LINK_DO_REPO" target="_blank" rel="noopener">Código</a> -->
             </div>
           </article>
 
@@ -112,15 +164,15 @@
             </header>
             <p class="card__desc">
               Sistema em Java com cadastro de produtos, entrada/saída, clientes, fornecedores e vendas.
-              Foco em CRUD, persistência e boas práticas.
+              Foco em CRUD, persistência (JDBC) e boas práticas (camadas/MVC).
             </p>
             <ul class="card__bullets">
               <li>Java + JDBC</li>
-              <li>Camadas e organização</li>
-              <li>Interface intuitiva</li>
+              <li>Arquitetura em camadas (MVC)</li>
+              <li>Telas de CRUD</li>
             </ul>
             <div class="card__actions">
-              <!-- Adicione links quando disponíveis -->
+              <!-- Adicione quando tiver -->
               <!-- <a class="btn" href="#" target="_blank" rel="noopener">Demo</a> -->
               <!-- <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Código</a> -->
             </div>
@@ -133,11 +185,11 @@
               <span class="badge">C/C++</span>
             </header>
             <p class="card__desc">
-              Aplicação em C/C++ utilizando arrays, estruturas heterogêneas e ponteiros para cadastro
-              e consulta de livros, usuários e empréstimos.
+              Aplicação em C/C++ utilizando arrays, estruturas heterogêneas e ponteiros para cadastro e consulta
+              de livros, usuários e empréstimos.
             </p>
             <ul class="card__bullets">
-              <li>Estruturas & ponteiros</li>
+              <li>Estruturas &amp; ponteiros</li>
               <li>Cadastro e consultas</li>
               <li>Foco em fundamentos</li>
             </ul>
@@ -150,7 +202,7 @@
     </section>
 
     <!-- CONTATO -->
-    <section class="section" aria-labelledby="contato-titulo">
+    <section class="section" id="contato" aria-labelledby="contato-titulo">
       <div class="container">
         <h2 id="contato-titulo">Contato</h2>
         <ul class="contact" role="list">
@@ -168,10 +220,25 @@
     </div>
   </footer>
 
-  <script>
-    // Atualiza o ano automaticamente
-    document.getElementById('ano').textContent = new Date().getFullYear();
+  <!-- Ano automático -->
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+
+  <!-- Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sulivan de Oliveira Silva",
+    "url": "https://suliv.github.io",
+    "image": "og-image.png",
+    "jobTitle": "Desenvolvedor em formação",
+    "alumniOf": "ADS",
+    "knowsAbout": ["Java", "C++", "Web", "POO", "Estruturas de Dados", "Git"],
+    "sameAs": [
+      "https://github.com/Sulivan-Git",
+      "https://www.linkedin.com/in/sullywan"
+    ]
+  }
   </script>
 </body>
 </html>
-``
