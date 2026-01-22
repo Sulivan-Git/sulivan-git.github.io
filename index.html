@@ -7,30 +7,37 @@
 
   <title>Portfólio · Sulivan de Oliveira Silva</title>
   <meta name="description" content="Portfólio de Sulivan de Oliveira Silva — estudante de ADS (5º semestre), focado em Java, C++ e Desenvolvimento Web. Projetos: Peneirada FC (produção), G-Stock e Sistema de Biblioteca.">
+  <meta name="theme-color" content="#0f172a">
 
   <!-- Canonical -->
-  https://suliv.github.io
+  https://sulivan-git.github.io/
 
   <!-- Open Graph / Social -->
   <meta property="og:title" content="Portfólio · Sulivan de Oliveira Silva">
   <meta property="og:description" content="Estudante de ADS (5º semestre). Projetos em destaque: Peneirada FC (produção), G-Stock (Java) e Sistema de Biblioteca (C/C++).">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://suliv.github.io">
-  <meta property="og:image" content="og-image.png">
+  <meta property="og:url" content="https://sulivan-git.github.io/">
+  <meta property="og:image" content="https://sulivan-git.github.io/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Prévia do portfólio de Sulivan de Oliveira Silva">
+  <meta property="og:site_name" content="Portfólio · Sulivan de Oliveira Silva">
+  <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#0f172a">
 
   <!-- Favicon -->
   favicon-32.png
   favicon.png
 
-  <!-- Fonte -->
-  https://fonts.gstatic.com
+  <!-- Google Fonts (performance) -->
   https://fonts.googleapis.com
+  https://fonts.gstatic.com
   https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap
 
+  <!-- Preload da hero (opcional, ajuda no LCP) -->
+  img/sulivan-768.jpg
+
+  <!-- CSS -->
   style.css
 </head>
 <body>
@@ -53,7 +60,7 @@
         </nav>
       </div>
 
-      <!-- Foto suspensa -->
+      <!-- Foto suspensa (flutuante) -->
       <figure class="hero-portrait" aria-label="Foto de perfil de Sulivan">
         <picture>
           <!-- AVIF -->
@@ -153,9 +160,7 @@
               <li>Telas de CRUD</li>
             </ul>
             <div class="card__actions">
-              <!-- Adicione quando tiver -->
-              <!-- #Demo</a> -->
-              <!-- #Código</a> -->
+              <!-- Links de demo/código quando disponíveis -->
             </div>
           </article>
 
@@ -175,7 +180,7 @@
               <li>Foco em fundamentos</li>
             </ul>
             <div class="card__actions">
-              <!-- #Código</a> -->
+              <!-- Link do repositório quando disponível -->
             </div>
           </article>
         </div>
@@ -202,7 +207,9 @@
   </footer>
 
   <!-- Ano automático -->
-  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
 
   <!-- Schema.org (JSON-LD) -->
   <script type="application/ld+json">
@@ -210,8 +217,8 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Sulivan de Oliveira Silva",
-    "url": "https://suliv.github.io",
-    "image": "og-image.png",
+    "url": "https://sulivan-git.github.io",
+    "image": "https://sulivan-git.github.io/og-image.png",
     "jobTitle": "Desenvolvedor em formação",
     "alumniOf": "ADS",
     "knowsAbout": ["Java", "C++", "Web", "POO", "Estruturas de Dados", "Git"],
