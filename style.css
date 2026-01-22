@@ -37,10 +37,7 @@ body {
 }
 
 /* Containers */
-.container {
-  width: min(1100px, 92%);
-  margin: 0 auto;
-}
+.container { width: min(1100px, 92%); margin: 0 auto; }
 
 /* Skip link */
 .skip-link {
@@ -69,11 +66,7 @@ body {
   }
 }
 .header__info { min-width: 260px; }
-h1 {
-  font-size: clamp(28px, 4vw, 40px);
-  margin: 0 0 8px;
-  font-weight: 800;
-}
+h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; font-weight: 800; }
 .highlight { color: var(--primary); }
 .subtitle { margin: 0; color: var(--muted); }
 
@@ -101,29 +94,19 @@ h1 {
 
 /* Sections */
 .section { padding: 42px 0; }
-.section h2 {
-  margin: 0 0 12px 0;
-  font-size: clamp(22px, 3vw, 28px);
-}
+.section h2 { margin: 0 0 12px 0; font-size: clamp(22px, 3vw, 28px); }
 .section p { margin: 0; color: var(--text); }
 
 /* Tags */
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  margin: 10px 0 0 0;
-  list-style: none;
+  display: flex; flex-wrap: wrap; gap: 10px;
+  padding: 0; margin: 10px 0 0 0; list-style: none;
 }
 .tag {
-  padding: 8px 12px;
-  border-radius: 999px;
+  padding: 8px 12px; border-radius: 999px;
   border: 1px solid var(--card-border);
   background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(0,0,0,.03));
-  color: var(--text);
-  font-weight: 600;
-  font-size: 14px;
+  color: var(--text); font-weight: 600; font-size: 14px;
 }
 
 /* Skills (medidores) */
@@ -131,11 +114,8 @@ h1 {
 .skill { display: grid; grid-template-columns: 140px 1fr; align-items: center; gap: 12px; }
 .skill span { font-weight: 700; }
 .bar {
-  height: 10px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid var(--card-border);
-  overflow: hidden;
+  height: 10px; border-radius: 999px; background: rgba(255,255,255,.08);
+  border: 1px solid var(--card-border); overflow: hidden;
 }
 .bar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--primary), #38bdf8); }
 @media (max-width: 560px) { .skill { grid-template-columns: 1fr; } }
@@ -145,13 +125,8 @@ h1 {
 @media (min-width: 760px) { .grid { grid-template-columns: repeat(3, 1fr); } }
 
 .card {
-  background: var(--card);
-  border: 1px solid var(--card-border);
-  border-radius: 14px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 12px;
   transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
 }
 .card:hover {
@@ -167,13 +142,8 @@ h1 {
 
 /* Badges */
 .badge {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--card-border);
-  color: var(--muted);
-  font-weight: 600;
-  font-size: 12px;
+  display: inline-block; padding: 6px 10px; border-radius: 999px;
+  border: 1px solid var(--card-border); color: var(--muted); font-weight: 600; font-size: 12px;
 }
 .badge--success {
   color: #052e16;
@@ -189,10 +159,8 @@ h1 {
 
 /* Footer */
 .site-footer {
-  padding: 28px 0 48px;
-  border-top: 1px solid var(--card-border);
-  color: var(--muted);
-  text-align: center;
+  padding: 28px 0 48px; border-top: 1px solid var(--card-border);
+  color: var(--muted); text-align: center;
 }
 
 /* ===== Foto suspensa (hero portrait) ===== */
@@ -201,13 +169,18 @@ h1 {
   position: relative;
   width: var(--size);
   height: var(--size);
+  aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
   isolation: isolate;
   margin-left: auto; /* fica à direita no desktop */
+  z-index: 0;
 }
 
 .portrait-img {
+  display: block;
+  position: relative;
+  z-index: 1;                 /* acima do brilho */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -223,7 +196,7 @@ h1 {
   position: absolute;
   inset: -12%;
   border-radius: 50%;
-  z-index: -1;
+  z-index: 0; /* brilho atrás da imagem */
   background:
     radial-gradient(60% 60% at 50% 50%, rgba(14,165,233,.25), transparent 70%),
     radial-gradient(50% 50% at 70% 30%, rgba(34,197,94,.20), transparent 70%);
@@ -239,4 +212,4 @@ h1 {
   .portrait-img, .portrait-glow { animation: none !important; transform: none !important; }
   .btn, .card { transition: none !important; }
 }
-``
+
